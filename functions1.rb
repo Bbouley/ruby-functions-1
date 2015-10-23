@@ -34,3 +34,29 @@ end
 
 puts stringCapitalize('test')
 puts stringCapitalize('blah blah')
+
+def evenNumbers(number)
+    0.step(number, 2) {|number| puts number}
+end
+
+# evenNumbers(10);
+# evenNumbers(45);
+
+def isDivisible(num1, num2)
+    if num1%num2 == 0 then return true
+    else return false
+    end
+end
+
+puts isDivisible(10, 2)
+puts isDivisible(8, 9)
+
+def oddNumbers(number)
+    if number > 40 then 41.step(number, 2) {|number| puts number}
+    else 1.step(number, 2) {|number| puts number}
+    end
+end
+
+oddNumbers(10)
+oddNumbers(57)
+
